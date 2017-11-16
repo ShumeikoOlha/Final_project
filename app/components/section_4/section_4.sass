@@ -1,0 +1,100 @@
+.work
+  min-height: 650px
+  width: 100%
+  &__container
+    +container()
+.work1
+  position: relative
+  min-height: 650px
+  &__title
+    display: block
+    padding-top: 70px
+    padding-bottom: 40px
+    text-align: center
+  &__content
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    min-height: 540px
+  &__item1
+    padding: 0 3%
+    width: 210px
+.item1
+  &__1
+    width: 100%
+    & img
+      display: block
+      margin: 30px auto
+  &__2
+    text-align: center
+    white-space: inherit
+    & span
+      font-weight: bold
+.travel
+  &__container
+    +container()
+  &__block
+    position: relative
+    min-height: 1020px
+    width: 100%
+  &__map
+    position: absolute
+    z-index: 2
+    top: 20px
+    width: 90%
+    height: 70%
+  &__bg
+    position: absolute
+    z-index: -1
+    bottom: 0
+    width: 100%
+  &__title
+    display: block
+    padding-bottom: 90px
+    text-align: center
+  &__content
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    @media (max-width: 1200px)
+      justify-content: center
+  &__item
+    padding: 3px
+    z-index: 3
+    position: relative
+    height: 380px
+    width: 200px
+    color: #fff
+    &__img
+      position: absolute
+      z-index: 1
+    &__stars
+      position: relative
+      z-index: 4
+      top: 5%
+      left: 5%
+    &__header
+      top: 45%
+      left: 5%
+      position: absolute
+      z-index: 4
+      font-size: 28px
+      font-weight: bold
+    &__text
+      top: 55%
+      left: 5%
+      position: absolute
+      z-index: 4
+    &__old_price
+      position: absolute
+      z-index: 4
+      bottom: 5%
+      left: 5%
+      text-decoration: line-through
+    &__price
+      position: absolute
+      z-index: 4
+      bottom: 5%
+      right: 5%
+      font-size: 24px
+      font-weight: bold

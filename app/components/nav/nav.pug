@@ -1,0 +1,4 @@
+mixin nav(data)
+    each item in data.menu
+        .nav_item
+            a.nav_item__link(href=(item.href))= item.text

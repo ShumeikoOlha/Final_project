@@ -1,0 +1,14 @@
+mixin section_1()
+  section.about(id="story")
+    .about__container
+      .about__content
+        +title("about us")
+        p.about__text Aliquam sed posuere urna, et gravida nisl. Praesent interdum nisl libero, pretium egestas purus eleifend vitae. Mauris suscipit vel lectus at luctus.
+        +btn({
+            "text": "read more",
+            "href": "#",
+            "height": 40,
+            "width": 130
+        })
+      img.about__img(src="/img/about.png")
+      img.about__bg(src="/img/background/map-1.png")

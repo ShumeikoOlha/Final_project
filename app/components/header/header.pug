@@ -1,0 +1,46 @@
+mixin header()
+    header.header
+        .header__line
+            .header__container
+                a.header__logo(href="#", alt="logo")
+                    img(src="/img/logo/mountains.png")
+                +nav({
+                    "menu": [
+                        {
+                            "text": "our story",
+                            "href": "#story"
+                        },
+                        {
+                            "text": "servises",
+                            "href": "#servises"
+                        },
+                        {
+                            "text": "work",
+                            "href": "#work"
+                        },
+                        {
+                            "text": "journal",
+                            "href": "#journal"
+                        },
+                        {
+                            "text": "contact",
+                            "href": "#contact"
+                        }
+                    ]
+                })
+                button.header__btn
+                    a.header__btn__link(href="#") call us
+        .header__bottom
+            .header__mid
+                .header__mid__items
+                    img.header__mid__items__logo(src="/img/logo/mountains_2.png")
+                    p.header__mid__items__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidid
+                    .header__mid__items__btn
+                        +btn({
+                            "text": "order now",
+                            "href": "#",
+                            "height": 60,
+                            "width": 250
+                        })
+    .preloader(id='preloader')
+        .spinner(id='spinner')

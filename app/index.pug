@@ -1,0 +1,35 @@
+include components/head/head
+include components/header/header
+include components/section_1/section_1
+include components/section_2/section_2
+include components/section_3/section_3
+include components/section_4/section_4
+include components/section_5/section_5
+include components/section_6/section_6
+include components/title/title
+include components/btn/btn
+include components/nav/nav
+
+doctype html
+html(lang="En")
+    block head
+        head
+            +head({
+                "title": "Landing Page",
+                "author": "Olha Shumeiko",
+                "description": "Landing Page"
+            })
+        body.page
+            block header
+                +header
+            block content
+                +section_1()
+                +section_2()
+                +section_3()
+                +section_4()
+                +section_5()
+                +section_6()
+            block scripts
+                // build:js js/main.js
+                script( src="js/main.js")
+                // endbuild

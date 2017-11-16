@@ -1,0 +1,43 @@
+mixin section_6()
+    .clients__block(id="contact")
+        img.clients__bg(src='/img/background/bg-3.png')
+        .clients__container
+            section.clients
+                .clients__title
+                    +title('our clients say')
+                .clients__content
+                    .clients__caurusel
+                        -
+                            var items = [{"text":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse ","photo":"1","name":"Pavliv Yaroslav Web designer"},
+                            {"text":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse ","photo":"2","name":"John Scott The Fringe"}]
+                        each item in items
+                            .clients__comments
+                                img.clients__comments__icon(src='/img/icons/quotes.png')
+                                p.clients__comments__text= item.text
+                                .clients__comments__client
+                                    img.clients__comments__photo(src='/img/client'+item.photo+'.png')
+                                    span.clients__comments__name= item.name
+                    .clients__form
+                        .clients__form__block
+                            .form
+                                .form__main
+                                    p.clients__form__title contacts
+                                    p.clients__form__text Sign up for our newsletter to receive updates
+                                    form(action="#")
+                                        input(type="text" name="name", placeholder="  Name:")
+                                        input(type="phone" name="phone", placeholder="  Phone:")
+                                        input(type="email" name="email", placeholder="  Email:")
+                                        +btn({
+                                            "text": "send",
+                                            "href": "#",
+                                            "height": 60,
+                                            "width": 450
+                                        })
+                    .clients__footer
+                        .clients__footer__content
+                            p.clients__footer__text All rights reserved 2017
+                            .clients__footer__icons
+                                img.clients__footer__icon(src="/img/icons/f_icon1.png")
+                                img.clients__footer__icon(src="/img/icons/f_icon2.png")
+                                img.clients__footer__icon(src="/img/icons/f_icon3.png")
+                            p.clients__footer__tel 0 123 456 789

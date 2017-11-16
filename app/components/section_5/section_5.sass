@@ -1,0 +1,38 @@
+.gallery_block
+  min-height: 940px
+  width: 100%
+.gallery
+  position: relative
+  &__container
+    +container()
+  &__title
+    display: block
+    padding: 70px 0 50px 0
+    text-align: center
+  &__content
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  &__img
+    padding: 15px 0
+    width: 100%
+.row1
+  +col(3)
+.row2
+  +col(4)
+.row3
+  +col(5)
+.social
+  position: relative
+  min-height: 180px
+  background: rgb(248, 249, 250)
+  &__container
+    +container()
+    +centre_xy()
+  &__content
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+  &__img
+

@@ -1,0 +1,18 @@
+mixin section_3()
+    section.wanna
+        .wanna__container
+            .wanna__content
+                +title("do you wanna go?")
+                p.wanna__content__text Aliquam sed posuere urna, et gravida nisl. Praesent interdum nisl libero, pretium egestas purus eleifend vitae. Mauris suscipit vel lectus at luctus.
+                form.wanna__content__form
+                    input(type='text' name='name' placeholder='  Your name:')
+                    input(type='phone' name='phone' placeholder='  Your phone:')
+                    +btn({
+                        "text": "order now",
+                        "href": "#",
+                        "height": 60,
+                        "width": 220
+                    })
+                .wanna__content__icon
+                    i.fa.fa-lock
+                    span.wanna__content__icon__text *Your data will not be transfered

@@ -1,0 +1,37 @@
+.journal
+  min-height: 990px
+  width: 100%
+  &__container
+    +container()
+    position: relative
+  &__title
+    display: block
+    text-align: center
+    margin: 70px auto
+  &__content
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+  &__img
+    background-color: rgba(#fff, 0.851)
+    box-shadow: 0px 0px 21px 0px rgba(6, 6, 6, 0.13)
+    position: relative
+    height: 380px
+    width: 380px
+    &__item
+      display: flex
+      flex-direction: column
+      text-align: center
+    &__span
+      //display: inline-block
+      color: $btn_color
+      margin: 50px 0
+    &__p1
+      text-transform: uppercase
+      margin-bottom: 30px
+    &__p3
+      margin: 40px 0
+  &__icon
+    +centre_xy()
+
+
